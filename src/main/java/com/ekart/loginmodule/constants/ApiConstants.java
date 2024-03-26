@@ -1,4 +1,4 @@
-package com.ekart.constants;
+package com.ekart.loginmodule.constants;
 
 public class ApiConstants {
     public static final String CIPHER_ALGO = "AES/CBC/PKCS5Padding";
