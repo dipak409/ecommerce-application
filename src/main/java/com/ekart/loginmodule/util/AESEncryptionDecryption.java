@@ -2,6 +2,7 @@ package com.ekart.loginmodule.util;
 
 import com.ekart.loginmodule.constants.ApiConstants;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import javax.crypto.Cipher;
@@ -15,6 +16,7 @@ import java.util.Base64;
 
 
 @Slf4j
+@Component
 public class AESEncryptionDecryption {
 
     private Cipher encryptionCipher;

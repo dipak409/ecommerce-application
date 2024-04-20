@@ -11,19 +11,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "signup", uniqueConstraints = {
+@Table(name = "login", uniqueConstraints = {
         @UniqueConstraint(columnNames = {"user_name"}),
-        @UniqueConstraint(columnNames = {"email"}),
-        @UniqueConstraint(columnNames = {"mobileNumber"})
 })
-public class SignUp {
+public class Login {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String userName;
     private String password;
-    private String email;
-    private String mobileNumber;
-
-
 }
